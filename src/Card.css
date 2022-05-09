@@ -1,0 +1,28 @@
+/* NOTE: outer most div controls width and height, dont add any modifiers like padding or margin or it bloats the image dimension. Also have to adjust any width or height set to 100% to accomodate any padding/margin */
+
+.card {
+  width: 360px;
+  height: 410px;
+  background-color: white;
+}
+
+.card-background {
+  background: rgb(228, 122, 21);
+  background: linear-gradient(
+    0deg,
+    rgba(228, 122, 21, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  padding: 20px;
+}
+
+.card-inside {
+  background-color: white;
+  border-radius: 10px;
+  height: calc(100% - 40px);
+  width: calc(100% - 40px);
+  padding: 20px;
+  font-size: 32px;
+}
